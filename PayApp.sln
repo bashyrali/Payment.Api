@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayApp", "PayApp\PayApp.csproj", "{E3F9A308-03A5-4FEA-B95A-D7C188FAA06A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{73757BDC-B9E6-4C7F-9CAE-3F9DFEE2146A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{00BDDB0F-BADF-480F-82D8-B8723ABD70ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{834BFE6A-0DBF-48AC-94BB-DF40D424AB90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{25CABDB5-765B-434E-B029-AA4D785ACC3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{414956F3-E792-4012-BF64-B66C1FDA2034}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayApp.Tests", "PayApp.Tests\PayApp.Tests.csproj", "{ECDD8161-C77D-4DEB-A954-77BD4D2B3536}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "git", "git", "{DFA49DC5-D346-4EF1-9AB1-351AAD3C4A84}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3F9A308-03A5-4FEA-B95A-D7C188FAA06A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3F9A308-03A5-4FEA-B95A-D7C188FAA06A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3F9A308-03A5-4FEA-B95A-D7C188FAA06A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3F9A308-03A5-4FEA-B95A-D7C188FAA06A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73757BDC-B9E6-4C7F-9CAE-3F9DFEE2146A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73757BDC-B9E6-4C7F-9CAE-3F9DFEE2146A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73757BDC-B9E6-4C7F-9CAE-3F9DFEE2146A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73757BDC-B9E6-4C7F-9CAE-3F9DFEE2146A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00BDDB0F-BADF-480F-82D8-B8723ABD70ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00BDDB0F-BADF-480F-82D8-B8723ABD70ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00BDDB0F-BADF-480F-82D8-B8723ABD70ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00BDDB0F-BADF-480F-82D8-B8723ABD70ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25CABDB5-765B-434E-B029-AA4D785ACC3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25CABDB5-765B-434E-B029-AA4D785ACC3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25CABDB5-765B-434E-B029-AA4D785ACC3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25CABDB5-765B-434E-B029-AA4D785ACC3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECDD8161-C77D-4DEB-A954-77BD4D2B3536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDD8161-C77D-4DEB-A954-77BD4D2B3536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECDD8161-C77D-4DEB-A954-77BD4D2B3536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECDD8161-C77D-4DEB-A954-77BD4D2B3536}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{00BDDB0F-BADF-480F-82D8-B8723ABD70ED} = {834BFE6A-0DBF-48AC-94BB-DF40D424AB90}
+		{73757BDC-B9E6-4C7F-9CAE-3F9DFEE2146A} = {834BFE6A-0DBF-48AC-94BB-DF40D424AB90}
+		{E3F9A308-03A5-4FEA-B95A-D7C188FAA06A} = {834BFE6A-0DBF-48AC-94BB-DF40D424AB90}
+		{25CABDB5-765B-434E-B029-AA4D785ACC3F} = {834BFE6A-0DBF-48AC-94BB-DF40D424AB90}
+		{ECDD8161-C77D-4DEB-A954-77BD4D2B3536} = {414956F3-E792-4012-BF64-B66C1FDA2034}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,155 @@
+2022-11-01 00:58:14.080 +06:00 [INF] Now listening on: https://localhost:5001
+2022-11-01 00:58:14.106 +06:00 [INF] Now listening on: http://localhost:5000
+2022-11-01 00:58:14.106 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 00:58:14.106 +06:00 [INF] Hosting environment: Development
+2022-11-01 00:58:14.106 +06:00 [INF] Content root path: C:\Users\LEGION 5\RiderProjects\PayApp\PayApp
+2022-11-01 00:58:14.299 +06:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-11-01 00:58:14.385 +06:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 88.5743ms
+2022-11-01 00:58:14.518 +06:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-11-01 00:58:14.584 +06:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 66.2866ms
+2022-11-01 00:58:28.384 +06:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 55
+2022-11-01 00:58:28.416 +06:00 [INF] Executing endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 00:58:28.453 +06:00 [INF] Route matched with {action = "PayByNumber", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] PayByNumber(PayApp.Dto.PaymentDto) on controller PayApp.Controllers.PaymentController (PayApp).
+2022-11-01 00:58:28.572 +06:00 [INF] Pay request: PayByNumberCommand Application.Payment.Commands.PayByNumberCommand
+2022-11-01 00:58:29.278 +06:00 [INF] Entity Framework Core 5.0.17 initialized 'PaymentDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+2022-11-01 00:58:29.965 +06:00 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Payments" ("Created", "NumberType", "PhoneNumber", "Sum")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2022-11-01 00:58:30.037 +06:00 [INF] Payment with Id:16 was success
+2022-11-01 00:58:30.050 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2022-11-01 00:58:30.057 +06:00 [INF] Executed action PayApp.Controllers.PaymentController.PayByNumber (PayApp) in 1599.5148ms
+2022-11-01 00:58:30.059 +06:00 [INF] Executed endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 00:58:30.069 +06:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 55 - 200 - text/plain;+charset=utf-8 1685.2572ms
+2022-11-01 00:58:57.093 +06:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 55
+2022-11-01 00:58:57.093 +06:00 [INF] Executing endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 00:58:57.093 +06:00 [INF] Route matched with {action = "PayByNumber", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] PayByNumber(PayApp.Dto.PaymentDto) on controller PayApp.Controllers.PaymentController (PayApp).
+2022-11-01 00:58:57.095 +06:00 [INF] Pay request: PayByNumberCommand Application.Payment.Commands.PayByNumberCommand
+2022-11-01 00:58:57.096 +06:00 [ERR] Number operator {key} not found
+2022-11-01 00:58:57.110 +06:00 [INF] Executed action PayApp.Controllers.PaymentController.PayByNumber (PayApp) in 16.5774ms
+2022-11-01 00:58:57.110 +06:00 [INF] Executed endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 00:58:57.116 +06:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 55 - 404 - application/json 23.2833ms
+2022-11-01 00:59:45.100 +06:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 56
+2022-11-01 00:59:45.101 +06:00 [INF] Executing endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 00:59:45.101 +06:00 [INF] Route matched with {action = "PayByNumber", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] PayByNumber(PayApp.Dto.PaymentDto) on controller PayApp.Controllers.PaymentController (PayApp).
+2022-11-01 00:59:45.112 +06:00 [INF] Executed action PayApp.Controllers.PaymentController.PayByNumber (PayApp) in 10.5937ms
+2022-11-01 00:59:45.112 +06:00 [INF] Executed endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 00:59:45.123 +06:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 56 - 400 - application/json 23.1696ms
+2022-11-01 01:01:09.171 +06:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 56
+2022-11-01 01:01:09.171 +06:00 [INF] Executing endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 01:01:09.171 +06:00 [INF] Route matched with {action = "PayByNumber", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] PayByNumber(PayApp.Dto.PaymentDto) on controller PayApp.Controllers.PaymentController (PayApp).
+2022-11-01 01:01:09.172 +06:00 [INF] Executed action PayApp.Controllers.PaymentController.PayByNumber (PayApp) in 0.7574ms
+2022-11-01 01:01:09.172 +06:00 [INF] Executed endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 01:01:09.173 +06:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 56 - 400 - application/json 1.4989ms
+2022-11-01 01:02:34.542 +06:00 [INF] Application is shutting down...
+2022-11-01 01:02:40.013 +06:00 [INF] Now listening on: https://localhost:5001
+2022-11-01 01:02:40.076 +06:00 [INF] Now listening on: http://localhost:5000
+2022-11-01 01:02:40.077 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 01:02:40.077 +06:00 [INF] Hosting environment: Development
+2022-11-01 01:02:40.077 +06:00 [INF] Content root path: C:\Users\LEGION 5\RiderProjects\PayApp\PayApp
+2022-11-01 01:02:40.281 +06:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-11-01 01:02:40.363 +06:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 84.3303ms
+2022-11-01 01:02:40.497 +06:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-11-01 01:02:40.561 +06:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 64.6735ms
+2022-11-01 01:02:43.692 +06:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 56
+2022-11-01 01:02:43.735 +06:00 [INF] Executing endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 01:02:43.783 +06:00 [INF] Route matched with {action = "PayByNumber", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] PayByNumber(PayApp.Dto.PaymentDto) on controller PayApp.Controllers.PaymentController (PayApp).
+2022-11-01 01:02:43.938 +06:00 [INF] Executed action PayApp.Controllers.PaymentController.PayByNumber (PayApp) in 149.912ms
+2022-11-01 01:02:43.940 +06:00 [INF] Executed endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 01:02:43.955 +06:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 56 - 400 - application/json 262.8224ms
+2022-11-01 01:03:30.033 +06:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 54
+2022-11-01 01:03:30.033 +06:00 [INF] Executing endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 01:03:30.034 +06:00 [INF] Route matched with {action = "PayByNumber", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] PayByNumber(PayApp.Dto.PaymentDto) on controller PayApp.Controllers.PaymentController (PayApp).
+2022-11-01 01:03:30.037 +06:00 [INF] Executed action PayApp.Controllers.PaymentController.PayByNumber (PayApp) in 3.3224ms
+2022-11-01 01:03:30.037 +06:00 [INF] Executed endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 01:03:30.038 +06:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 54 - 400 - application/json 4.6737ms
+2022-11-01 01:11:22.746 +06:00 [INF] Application is shutting down...
+2022-11-01 01:11:29.040 +06:00 [INF] Starting Web app
+2022-11-01 01:11:29.345 +06:00 [INF] Now listening on: https://localhost:5001
+2022-11-01 01:11:29.347 +06:00 [INF] Now listening on: http://localhost:5000
+2022-11-01 01:11:29.347 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 01:11:29.347 +06:00 [INF] Hosting environment: Development
+2022-11-01 01:11:29.348 +06:00 [INF] Content root path: C:\Users\LEGION 5\RiderProjects\PayApp\PayApp
+2022-11-01 01:11:29.536 +06:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-11-01 01:11:29.616 +06:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 83.0405ms
+2022-11-01 01:11:29.748 +06:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-11-01 01:11:29.815 +06:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 67.1325ms
+2022-11-01 01:11:32.836 +06:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 54
+2022-11-01 01:11:32.873 +06:00 [INF] Executing endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 01:11:32.908 +06:00 [INF] Route matched with {action = "PayByNumber", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] PayByNumber(PayApp.Dto.PaymentDto) on controller PayApp.Controllers.PaymentController (PayApp).
+2022-11-01 01:11:33.045 +06:00 [INF] Executed action PayApp.Controllers.PaymentController.PayByNumber (PayApp) in 133.0727ms
+2022-11-01 01:11:33.047 +06:00 [INF] Executed endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 01:11:33.061 +06:00 [ERR] Validation error: ["Нөмір 12 символдан тұрады"]
+2022-11-01 01:11:33.065 +06:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 54 - 400 - application/json 229.0196ms
+2022-11-01 01:11:54.791 +06:00 [INF] Application is shutting down...
+2022-11-01 01:23:15.587 +06:00 [INF] Starting Web app
+2022-11-01 01:23:15.928 +06:00 [INF] Now listening on: https://localhost:5001
+2022-11-01 01:23:15.933 +06:00 [INF] Now listening on: http://localhost:5000
+2022-11-01 01:23:15.934 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 01:23:15.935 +06:00 [INF] Hosting environment: Development
+2022-11-01 01:23:15.936 +06:00 [INF] Content root path: C:\Users\LEGION 5\RiderProjects\PayApp\PayApp
+2022-11-01 01:23:16.483 +06:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-11-01 01:23:16.569 +06:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 88.6964ms
+2022-11-01 01:23:16.707 +06:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-11-01 01:23:16.776 +06:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 69.7262ms
+2022-11-01 01:23:30.578 +06:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 54
+2022-11-01 01:23:30.609 +06:00 [INF] Executing endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 01:23:30.648 +06:00 [INF] Route matched with {action = "PayByNumber", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] PayByNumber(PayApp.Dto.PaymentDto) on controller PayApp.Controllers.PaymentController (PayApp).
+2022-11-01 01:23:30.801 +06:00 [INF] Executed action PayApp.Controllers.PaymentController.PayByNumber (PayApp) in 146.3508ms
+2022-11-01 01:23:30.806 +06:00 [INF] Executed endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 01:23:30.822 +06:00 [ERR] Validation error: ["Нөмір 12 символдан тұрады"]
+2022-11-01 01:23:30.830 +06:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 54 - 400 - application/json 252.5537ms
+2022-11-01 01:23:51.051 +06:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 55
+2022-11-01 01:23:51.052 +06:00 [INF] Executing endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 01:23:51.053 +06:00 [INF] Route matched with {action = "PayByNumber", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] PayByNumber(PayApp.Dto.PaymentDto) on controller PayApp.Controllers.PaymentController (PayApp).
+2022-11-01 01:23:51.060 +06:00 [INF] Pay request: PayByNumberCommand Application.Payment.Commands.PayByNumberCommand
+2022-11-01 01:23:51.752 +06:00 [INF] Entity Framework Core 5.0.17 initialized 'PaymentDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+2022-11-01 01:23:52.439 +06:00 [INF] Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Payments" ("Created", "NumberType", "PhoneNumber", "Sum")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2022-11-01 01:23:52.494 +06:00 [INF] Payment with Id:17 was success
+2022-11-01 01:23:52.508 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2022-11-01 01:23:52.512 +06:00 [INF] Executed action PayApp.Controllers.PaymentController.PayByNumber (PayApp) in 1455.2247ms
+2022-11-01 01:23:52.514 +06:00 [INF] Executed endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 01:23:52.524 +06:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 55 - 200 - text/plain;+charset=utf-8 1473.7428ms
+2022-11-01 01:24:13.966 +06:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 55
+2022-11-01 01:24:13.968 +06:00 [INF] Executing endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 01:24:13.969 +06:00 [INF] Route matched with {action = "PayByNumber", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] PayByNumber(PayApp.Dto.PaymentDto) on controller PayApp.Controllers.PaymentController (PayApp).
+2022-11-01 01:24:13.973 +06:00 [INF] Pay request: PayByNumberCommand Application.Payment.Commands.PayByNumberCommand
+2022-11-01 01:24:14.044 +06:00 [INF] Entity Framework Core 5.0.17 initialized 'PaymentDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+2022-11-01 01:24:14.049 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Payments" ("Created", "NumberType", "PhoneNumber", "Sum")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2022-11-01 01:24:14.054 +06:00 [INF] Payment with Id:18 was success
+2022-11-01 01:24:14.056 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2022-11-01 01:24:14.058 +06:00 [INF] Executed action PayApp.Controllers.PaymentController.PayByNumber (PayApp) in 86.6571ms
+2022-11-01 01:24:14.059 +06:00 [INF] Executed endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 01:24:14.061 +06:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 55 - 200 - text/plain;+charset=utf-8 95.2214ms
+2022-11-01 01:25:01.081 +06:00 [INF] Application is shutting down...
+2022-11-01 01:31:33.380 +06:00 [INF] Starting Web app
+2022-11-01 01:31:33.733 +06:00 [INF] Now listening on: https://localhost:5001
+2022-11-01 01:31:33.737 +06:00 [INF] Now listening on: http://localhost:5000
+2022-11-01 01:31:33.738 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 01:31:33.739 +06:00 [INF] Hosting environment: Development
+2022-11-01 01:31:33.740 +06:00 [INF] Content root path: C:\Users\LEGION 5\RiderProjects\PayApp\PayApp
+2022-11-01 01:31:33.913 +06:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-11-01 01:31:34.001 +06:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 91.5862ms
+2022-11-01 01:31:34.140 +06:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-11-01 01:31:34.209 +06:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 69.3652ms
+2022-11-01 01:31:38.097 +06:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 55
+2022-11-01 01:31:38.133 +06:00 [INF] Executing endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 01:31:38.172 +06:00 [INF] Route matched with {action = "PayByNumber", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] PayByNumber(PayApp.Dto.PaymentDto) on controller PayApp.Controllers.PaymentController (PayApp).
+2022-11-01 01:31:38.303 +06:00 [INF] Pay request: PayByNumberCommand {"PhoneNumber":"+77009411575","Sum":3000,"$type":"PayByNumberCommand"}
+2022-11-01 01:31:38.988 +06:00 [INF] Entity Framework Core 5.0.17 initialized 'PaymentDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+2022-11-01 01:31:39.701 +06:00 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Payments" ("Created", "NumberType", "PhoneNumber", "Sum")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2022-11-01 01:31:39.794 +06:00 [INF] Payment with Id:19 was success
+2022-11-01 01:31:39.810 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2022-11-01 01:31:39.819 +06:00 [INF] Executed action PayApp.Controllers.PaymentController.PayByNumber (PayApp) in 1638.6282ms
+2022-11-01 01:31:39.823 +06:00 [INF] Executed endpoint 'PayApp.Controllers.PaymentController.PayByNumber (PayApp)'
+2022-11-01 01:31:39.834 +06:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/Payment?culture=kk application/json 55 - 200 - text/plain;+charset=utf-8 1737.1020ms
+2022-11-01 01:34:08.437 +06:00 [INF] Application is shutting down...

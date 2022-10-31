@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="12.0.0" />
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+      <PackageReference Include="FluentValidation" Version="11.2.2" />
+      <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.2.2" />
+      <PackageReference Include="MediatR" Version="11.0.0" />
+      <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
+      <PackageReference Include="Microsoft.Extensions.Localization" Version="5.0.17" />
+      <PackageReference Include="Serilog" Version="2.12.0" />
+      <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Domain\Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Resources\Payment\Commands\PayByNumberCommandValidator.ru.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>PayByNumberCommandValidator.ru.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Resources\Payment\Commands\PayByNumberCommandValidator.kk.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>PayByNumberCommandValidator.kk.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Resources\Payment\Commands\PayByNumberCommandHandler.ru.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>PayByNumberCommandHandler.ru.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Resources\Payment\Commands\PayByNumberCommandHandler.kk.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>PayByNumberCommandHandler.kk.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Resources\Payment\Commands\PayByNumberCommandValidator.ru.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>PayByNumberCommandValidator.ru.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Resources\Payment\Commands\PayByNumberCommandValidator.kk.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>PayByNumberCommandValidator.kk.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Resources\Payment\Commands\PayByNumberCommandHandler.ru.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>PayByNumberCommandHandler.ru.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Resources\Payment\Commands\PayByNumberCommandHandler.kk.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>PayByNumberCommandHandler.kk.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>
